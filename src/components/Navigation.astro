@@ -1,7 +1,7 @@
 ---
-
+const { active } = Astro.props;
 ---
 
-<div class="navigation w-full h-screen bg-white p-12 z-[500] hidden">
+<div class:list={['navigation w-full h-screen bg-white p-12 z-[500]', { block: active, hidden: !active }]}>
     <div class="navheader grid"></div>
 </div>
